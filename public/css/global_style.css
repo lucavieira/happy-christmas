@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    --background-pink: #F7C7B9;
+    --color-text: #161212;
+    --color-description: #404040;
+    --color-resume: #8D8D8D;
+    --color-text-button: #F9F9F9;
+    --btn-color: #DA2535;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--color-text);
+}
+
+header {
+    background-color: var(--background-pink);
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    list-style-type: none;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+nav ul li a {
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 'Text Image';
+
+    gap: 8%;
+    align-items: center;
+
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.container-card .text h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.container-card .text p {
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--color-description);
+
+    padding: 25px 0;
+}
+
+.container-card .text a {
+    text-decoration: none;
+    font-weight: 600;
+
+    padding: 10px 35px;
+
+    border-radius: 8px;
+
+    background-color: var(--btn-color);
+    color: var(--color-text-button);
+}
+
+.container-card .text a img {
+    position: relative;
+    top: 4px;
+}
+
+footer {
+    background-color: white;
+}
