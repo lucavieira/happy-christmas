@@ -8,6 +8,7 @@
     --color-resume: #8D8D8D;
     --color-text-button: #F9F9F9;
     --btn-color: #DA2535;
+    --btn-color-transparent: #da253456;
 
     font-family: 'Poppins', sans-serif;
 
@@ -45,7 +46,7 @@ nav ul {
     list-style-type: none;
 }
 
-nav a {
+.logo {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -198,13 +199,43 @@ nav ul li a:hover {
     padding: 20px 0;
 }
 
+/* FOOTER */
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 40px 0;
+}
+
+footer .container ul {
+    display: flex;
+    gap: 30px;
+}
+
+footer .container ul li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    list-style-type: none;
+    background-color: var(--btn-color-transparent);
+}
+
+footer .container ul li img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* MEDIA QUERIES - RESPONSIVIDADE */
 
 @media (max-width: 630px) {
     .main-title {
         font-size: 36px;
     }
-    
+
     .container-card {
         display: flex;
         flex-direction: column-reverse;
@@ -217,5 +248,19 @@ nav ul li a:hover {
 
     .menu {
         display: none;
+    }
+
+    footer .container {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    footer .container .logo {
+        padding-bottom: 20px;
+    }
+
+    footer .container ul {
+        justify-content: center;
+        flex-flow: row wrap;
     }
 }
