@@ -89,7 +89,7 @@ nav ul li a:hover {
     padding: 25px 0;
 }
 
-.container-card .text a {
+.btn-donation {
     text-decoration: none;
     font-weight: 600;
 
@@ -101,7 +101,7 @@ nav ul li a:hover {
     color: var(--color-text-button);
 }
 
-.container-card .text a img {
+.btn-donation img {
     position: relative;
     top: 4px;
 }
@@ -166,12 +166,56 @@ nav ul li a:hover {
     color: var(--color-resume);
 }
 
+.celebrate {
+    background-color: var(--background-pink);
+
+    padding: 120px 0;
+}
+
+.celebrate .container {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    grid-template-areas: 'Image Text';
+    justify-content: center;
+    align-items: center;
+}
+
+.celebrate #send_gift {
+    max-width: 400px;
+    width: 100%;
+}
+
+.celebrate .text-celebrate .main-title {
+    line-height: 40px;
+}
+
+.celebrate .text-celebrate p {
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--color-description);
+
+    padding: 20px 0;
+}
 
 /* MEDIA QUERIES - RESPONSIVIDADE */
 
 @media (max-width: 630px) {
+    .main-title {
+        font-size: 36px;
+    }
+    
     .container-card {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .celebrate .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
     }
 }
