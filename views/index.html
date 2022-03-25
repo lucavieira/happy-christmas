@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="../public/css/global_style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
     <header>
@@ -23,7 +23,7 @@
                     <img src="../public/images/icons/noel_icon.svg" alt="Senhor com barba branca, gorro vermelho, representando o papai noel">
                     Happy Christmas
                 </a>
-                <ul>
+                <ul class="menu">
                     <li>
                         <a href="">Home</a>
                     </li>
@@ -40,7 +40,7 @@
             </nav>
             <div class="container-card">
                 <div class="text">
-                    <h1>Happy Christmas and Happy New Year</h1>
+                    <h1 class="main-title">Happy Christmas and Happy New Year</h1>
                     <p>
                         Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.
                     </p>
@@ -54,33 +54,35 @@
         </div>
     </header>
     <main>
-        <article>
-            <h2>Accessories</h2>
-            <p>
-                Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.
-            </p>
-            <ul>
-                <li>
-                    <img src="../public/images/gift.png" alt="Caixa de presente, com um laço amarelo.">
-                    <strong>Gifts</strong>
-                    <p>Eles são os melhores presentes que existem.</p>
-                </li>
-                <li>
-                    <img src="../public/images/bells.png" alt="Dois sinos com um laço vermelho">
-                    <strong>Ornaments</strong>
-                    <p>Dê uma decoração.</p>
-                </li>
-                <li>
-                    <img src="../public/images/christmas_cane.png" alt="Bengala doce, com listras vermelhas e brancas.">
-                    <strong>Candy</strong>
-                    <p>Aproveite os doces natalinos.</p>
-                </li>
-                <li>
-                    <img src="../public/images/sock.png" alt="Uma meia vermelha com a ponta verde pendurada na lareira.">
-                    <strong>Very love</strong>
-                    <p>Aproveite os sentimentos que duram para sempre.</p>
-                </li>
-            </ul>
+        <article class="accessories">
+            <div class="container">
+                <h2 class="main-title">Accessories</h2>
+                <p>
+                    Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.
+                </p>
+                <ul class="list-categories">
+                    <li>
+                        <img src="../public/images/gift.png" alt="Caixa de presente, com um laço amarelo.">
+                        <strong class="item-title">Gifts</strong>
+                        <p class="item-description">Eles são os melhores presentes que existem.</p>
+                    </li>
+                    <li>
+                        <img src="../public/images/bells.png" alt="Dois sinos com um laço vermelho">
+                        <strong class="item-title">Ornaments</strong>
+                        <p class="item-description">Dê uma decoração.</p>
+                    </li>
+                    <li>
+                        <img src="../public/images/christmas_cane.png" alt="Bengala doce, com listras vermelhas e brancas.">
+                        <strong class="item-title">Candy</strong>
+                        <p class="item-description">Aproveite os doces natalinos.</p>
+                    </li>
+                    <li>
+                        <img src="../public/images/sock.png" alt="Uma meia vermelha com a ponta verde pendurada na lareira.">
+                        <strong class="item-title">Very love</strong>
+                        <p class="item-description">Aproveite os sentimentos que duram para sempre.</p>
+                    </li>
+                </ul>
+            </div>
         </article>
         <article>
             <img src="../public/images/shared.png" alt="Duas mãos segurando um presente.">
